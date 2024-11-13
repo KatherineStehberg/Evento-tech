@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFuture 2025 - Inscripción</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-futbol"></i> TechFuture 2025</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inscripcion"><i class="fas fa-user-plus"></i> Inscripción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#agenda"><i class="fas fa-calendar-day"></i> Agenda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ponentes"><i class="fas fa-chalkboard-teacher"></i> Ponentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq"><i class="fas fa-question"></i> FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Header with the background image in the css-->
+<header class="hero-header text-white text-center py-5">
+    <h1><i class="fas fa-globe-europe"></i> Conferencia Internacional TechFuture 2025</h1>
+    <p>3 - 5 de Julio 2025 | Modalidad Híbrida (Presencial y Virtual)</p>
+    <a href="#inscripcion" class="btn btn-primary mt-3"><i class="fas fa-sign-in-alt"></i> Regístrate Ahora</a>
+</header>
+
+    <main>
+        <!-- Descripción del evento -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2><i class="fas fa-info-circle"></i> Acerca del Evento</h2>
+                <p>Únete a los expertos en tecnología para discutir las últimas tendencias en IA, robótica y tecnología sostenible. Descubre las innovaciones que están transformando el futuro.</p>
+            </div>
+        </section>
+
+        <!-- Ponentes Destacados -->
+        <section id="ponentes" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center"><i class="fas fa-users"></i> Ponentes Destacados</h2>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img src="./assets/img/speaker1.jpg" class="rounded-circle" alt="Ponente 1" width="100">
+                        <h5>Dr. Jane Doe</h5>
+                        <p>Experta en IA</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/speaker2.jpg" class="rounded-circle" alt="Ponente 2" width="100">
+                        <h5>John Smith</h5>
+                        <p>CEO de Future Tech</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/speaker_3.jpg" class="rounded-circle" alt="Ponente 3" width="100">
+                        <h5>Alice Johnson</h5>
+                        <p>Investigadora en Robótica</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agenda del Evento -->
+        <section id="agenda" class="py-5">
+            <div class="container">
+                <h2 class="text-center"><i class="fas fa-calendar-alt"></i> Agenda del Evento</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Día 1 - Introducción a la IA y Robótica</li>
+                    <li class="list-group-item">Día 2 - Talleres en Tecnologías Sostenibles</li>
+                    <li class="list-group-item">Día 3 - Mesas Redondas y Networking</li>
+                    <li class="list-group-item">Día 4 - Mesas Redondas y Networking</li>
+                    <li class="list-group-item">Día 5 - Conclusión</li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="#agenda" class="btn btn-primary">Ver Agenda Completa <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contador Regresivo -->
+        <section class="text-center py-5 bg-dark text-white">
+            <h2><i class="fas fa-clock"></i> Cuenta regresiva para TechFuture 2025</h2>
+            <div id="countdown" class="p-3 border border-primary rounded"></div>
+            <script>
+                const countDownDate = new Date("July 3, 2025 09:00:00").getTime();
+                setInterval(function() {
+                    let now = new Date().getTime();
+                    let distance = countDownDate - now;
+                    let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    let minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
+                    let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                }, 1000);
+            </script>
+        </section>
+
+        <!-- Formulario de Inscripción -->
+        <section id="inscripcion" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center"><i class="fas fa-edit"></i> Formulario de Inscripción</h2>
+                <form action="/inscripcion" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalidad" class="form-label">Modalidad de Asistencia</label>
+                        <select class="form-select" id="modalidad" name="modalidad" required>
+                            <option value="presencial">Presencial</option>
+                            <option value="virtual">Virtual</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Enviar Inscripción</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Video Promocional -->
+        <section class="py-5 text-center">
+            <div class="container">
+                <h2><i class="fas fa-video"></i> Conoce más sobre TechFuture 2025</h2>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Video de TechFuture 2025" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>        <!-- Mapa de Google -->
+        <section class="map-section py-5 text-center">
+            <h2><i class="fas fa-map-marker-alt"></i> Encuéntranos</h2>
+            <p>Visítanos en nuestra ubicación o contáctanos a través del mapa.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.857564759364!2d-70.64827188480007!3d-33.45694048076826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1e64b40e5%3A0x6b6637a5d09be43d!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses!2sus!4v1636747738185!5m2!1ses!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>© 2025 TechFuture. Todos los derechos reservados.</p>
+    <div class="d-flex justify-content-center">
+        <a href="#" class="text-white px-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-white px-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white px-3"><i class="fab fa-linkedin-in"></i></a>
+        <!-- Contact Icon -->
+        <a href="mailto:contacto@techfuture.com" class="text-white px-3" title="Contact Us"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="mt-3">Sigue nuestras redes para más actualizaciones y noticias sobre TechFuture 2025</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
